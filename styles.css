@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    margin: 10px;
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 2px;
+    width: 400px;
+    height: 200px;
+    padding: 10px;
+   
+}
+p{
+    font-size:100px;
+    color: rgb(26, 119, 156);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 10);
+}
+.bounce {
+     
+    /* animation: bounce 1s infinite; */
+    animation: bounce;/* animation nae*/
+    animation-duration: 0.8s;
+    /* animation-fill-mode: forwards; */
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+
+}
+@keyframes bounce {/* animation defination*/
+    20%,30%,40%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+.b{
+    animation-delay: 0s;
+    
+} 
+.o{
+    animation-delay: 0.1s;
+}
+.u{
+    animation-delay: 0.2s;
+}
+.n{
+    animation-delay: 0.3s;
+}
+.c{
+    animation-delay: 0.4s;
+}
+.e{
+    animation-delay: 0.5s;
+} 
